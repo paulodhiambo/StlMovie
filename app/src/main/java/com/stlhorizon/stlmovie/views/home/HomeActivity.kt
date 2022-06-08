@@ -13,7 +13,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         findViewById<ShimmerFrameLayout>(R.id.shimmer_view_container_popular).startShimmerAnimation()
         findViewById<ShimmerFrameLayout>(R.id.shimmer_view_container_top_rated).startShimmerAnimation()
         findViewById<ShimmerFrameLayout>(R.id.shimmer_view_container_upcoming).startShimmerAnimation()

@@ -20,7 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".views.detail.DetailActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".views.home.HomeActivity"
             android:exported="true">
