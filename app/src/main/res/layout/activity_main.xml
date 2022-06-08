@@ -58,6 +58,10 @@
                     <include layout="@layout/recyclerview_placeholder" />
 
                     <include layout="@layout/recyclerview_placeholder" />
+
+                    <include layout="@layout/recyclerview_placeholder" />
+
+                    <include layout="@layout/recyclerview_placeholder" />
                 </LinearLayout>
             </HorizontalScrollView>
         </com.facebook.shimmer.ShimmerFrameLayout>
@@ -93,6 +97,10 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
+                    <include layout="@layout/recyclerview_placeholder" />
+
+                    <include layout="@layout/recyclerview_placeholder" />
 
                     <include layout="@layout/recyclerview_placeholder" />
 
@@ -137,6 +145,10 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
+                    <include layout="@layout/recyclerview_placeholder" />
+
+                    <include layout="@layout/recyclerview_placeholder" />
 
                     <include layout="@layout/recyclerview_placeholder" />
 
