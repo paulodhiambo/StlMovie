@@ -14,8 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/movieName"
@@ -68,18 +67,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/summaryText" />
+
     <TextView
         android:id="@+id/castTxt"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
         android:text="@string/casts"
         android:textSize="15sp"
         android:textStyle="normal"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@id/movieDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toBottomOf="@id/movieDescription" />
 
     <LinearLayout
         android:id="@+id/imageRecyclerview"
@@ -92,20 +92,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/movieDescription">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userImage"
             android:layout_width="66dp"
             android:layout_height="66dp"
-            android:src="@drawable/download"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="25dp"/>
+            android:src="@drawable/download" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userImages"
             android:layout_width="66dp"
             android:layout_height="66dp"
-            android:src="@drawable/downloads"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="25dp"/>
+            android:src="@drawable/downloads" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/usersImages"
             android:layout_width="64dp"
@@ -113,6 +116,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/gollum" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/usersImage"
             android:layout_width="64dp"
