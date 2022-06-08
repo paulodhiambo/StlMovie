@@ -22,7 +22,7 @@
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".views.home.MainActivity"
+            android:name=".views.home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
