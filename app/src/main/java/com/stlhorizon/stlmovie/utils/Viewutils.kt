@@ -3,17 +3,21 @@ package com.stlhorizon.stlmovie.utils
 import android.content.Context
 import android.widget.ImageView
 import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
+import androidx.databinding.BindingAdapter
+import com.squareup.picasso.Picasso
+import com.stlhorizon.stlmovie.R
 
-
-fun loadImage(view: ImageView, url: String) {
-    Glide.with(view.context)
-        .load(url)
-        .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-        .into(view)
+@BindingAdapter("imageUrl")
+fun ImageView.loadImage(url: String?) {
+    if (url == null) {
+        Picasso.get().load(R.drawable.movie).into(this)
+    } else {
+        Picasso.get().load(url).into(this)
+    }
 }
 
 fun showToast(context: Context, content: String) {
     Toast.makeText(context, content, Toast.LENGTH_LONG).show()
 }
+
+

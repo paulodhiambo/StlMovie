@@ -16,17 +16,16 @@
         android:theme="@style/Theme.StlMovie"
         tools:targetApi="31">
         <activity
-            android:name=".SearchActivity"
+            android:name=".views.search.SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
+            android:name=".views.detail.DetailActivity"
+            android:exported="true" />
         <activity
             android:name=".views.home.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
