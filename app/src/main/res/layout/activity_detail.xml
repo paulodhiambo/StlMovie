@@ -6,4 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".views.detail.DetailActivity">
 
+    <ImageView
+        android:id="@+id/movieDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/movie_name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieDetailImage" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/release_date"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieName" />
+
+    <TextView
+        android:id="@+id/summaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/summary"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/releaseDate" />
+
+    <TextView
+        android:id="@+id/movieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/movie_description"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summaryText" />
+    <TextView
+        android:id="@+id/castTxt"
+        android:layout_width="match_parent"
+        android:text="@string/casts"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/movieDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/imageRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieDescription">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/download"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImages"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/downloads"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/usersImages"
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gollum" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/usersImage"
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/king" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
