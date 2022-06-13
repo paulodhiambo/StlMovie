@@ -83,4 +83,8 @@ dependencies {
 
     //circleimage
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //activityktx
+    implementation "androidx.activity:activity-ktx:1.4.0"
+
 }
