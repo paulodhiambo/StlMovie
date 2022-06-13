@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.stlhorizon.stlmovie.data.remote.response.Movie
 import com.stlhorizon.stlmovie.data.remote.response.topRatedMoviesResponse
 import com.stlhorizon.stlmovie.domain.GetTopRatedMoviesUseCase
 import com.stlhorizon.stlmovie.utils.Resource
@@ -16,8 +17,8 @@ import javax.inject.Inject
 class HomeViewModel @Inject constructor(
     private val moviesUseCase: GetTopRatedMoviesUseCase
 ) : ViewModel() {
-    private var _topRatedMovieResponse = MutableLiveData<Resource<topRatedMoviesResponse>>()
-    val topRatedMoviesResponse: LiveData<Resource<topRatedMoviesResponse>>
+    private var _topRatedMovieResponse = MutableLiveData<Resource<List<Movie>>>()
+    val topRatedMoviesResponse: LiveData<Resource<List<Movie>>>
     get() = _topRatedMovieResponse
 
     fun getTopRatedMovies(){

@@ -41,9 +41,8 @@ class HomeActivity : AppCompatActivity() {
         viewModel.topRatedMoviesResponse.observe(this){result->
             when(result){
                 is Resource.Success->{
-                    Log.d("Result===>","${result.data}")
                     val madapter = TopRatedAdapter()
-                    madapter.setMovies(result.data!!.results)
+                    madapter.setMovies(result.data!!)
                     topRatedRecyclerView.apply {
                         hasFixedSize()
                         adapter =madapter
