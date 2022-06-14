@@ -10,17 +10,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.stlhorizon.stlmovie.R
 import com.stlhorizon.stlmovie.data.local.model.PopularMovie
-import com.stlhorizon.stlmovie.data.local.model.TopRatedMovie
+import com.stlhorizon.stlmovie.data.local.model.UpcomingMovie
 import com.stlhorizon.stlmovie.views.detail.DetailActivity
 
-class TopRatedAdapter : RecyclerView.Adapter<TopRatedAdapter.ViewHolder>(){
-    private var movies : MutableList<TopRatedMovie> = ArrayList()
-    fun setMovies(items:List<TopRatedMovie>){
+class UpcomingAdapter : RecyclerView.Adapter<UpcomingAdapter.ViewHolder>(){
+    private var movies : MutableList<UpcomingMovie> = ArrayList()
+    fun setMovies(items:List<UpcomingMovie>){
         movies.addAll(items)
         notifyDataSetChanged()
     }
-    inner class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-        fun bind(movie:TopRatedMovie){
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        fun bind(movie: UpcomingMovie){
             val image = itemView.findViewById<ImageView>(R.id.movie_card)
             Picasso.get().load("https://image.tmdb.org/t/p/w500${movie.backdrop_path}").into(image)
             Log.d("image Url =====>", "https://image.tmdb.org/t/p/w500${movie.backdrop_path}")

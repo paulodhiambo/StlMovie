@@ -1,10 +1,10 @@
-package com.stlhorizon.stlmovie.data.remote.response
+package com.stlhorizon.stlmovie.data.local.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Movie(
+data class PopularMovie(
     val adult: Boolean,
     val backdrop_path: String,
     @PrimaryKey(autoGenerate = false)
@@ -18,5 +18,5 @@ data class Movie(
     val title: String,
     val video: Boolean,
     val vote_average: Double,
-    val vote_count: Int
+    val vote_count: Int,
 )
